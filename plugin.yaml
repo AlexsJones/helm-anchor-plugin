@@ -1,0 +1,15 @@
+name: "anchor"
+version: "0.1.0"
+usage: "produce an output snapshot of your helm releases"
+description: "see your helm infrastructure across the board"
+ignoreFlags: true
+platformCommand:
+  - os: linux
+    arch: amd64
+    command: "$HELM_PLUGIN_DIR/bin/anchor_linux_amd64"
+  - os: darwin
+    arch: amd64
+    command: "$HELM_PLUGIN_DIR/bin/anchor_darwin_amd64"
+  - os: windows
+    arch: amd64
+    command: "$HELM_PLUGIN_DIR/bin/anchor_lwindows_amd64.exe"
